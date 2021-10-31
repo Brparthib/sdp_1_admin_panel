@@ -10,8 +10,18 @@ Table of Contents
 */
 
 /* Common CSS Start */
+:root{
+    --blue: #287bff;
+    --white: #fff;
+    --grey: #f5f5f5;
+    --deepgrey: #999;
+    --black: #222;
+}
+
 body{
     font-family: sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5,h6, ul, ol, span, p{
@@ -23,7 +33,109 @@ ul{
     list-style-type: none;
 }
 
-a:hover{
+a{
     text-decoration: none;
 }
 /* Common CSS End */
+
+/* sidemenu CSS Start */
+#sidemenu{
+    position: relative;
+    width: 100%;
+}
+
+.navigation{
+    position: fixed;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background: var(--blue);
+    border-left: 10px solid var(--blue);
+    overflow: hidden;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 5px 0 5px 20px;
+    margin: 10px 0;
+}
+
+.navigation ul li:hover{
+    background: var(--white);
+}
+
+.navigation ul li:nth-child(1)
+{
+    margin-bottom: 40px;
+    pointer-events: none;
+}
+
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    color: var(--white);
+}
+
+.navigation ul li:hover a{
+    color: var(--blue);
+}
+
+.navigation ul li:hover a::before,
+.navigation ul li:hover a::after{
+    position: absolute;
+    content: "";
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50;
+    -moz-border-radius: 50;
+    -ms-border-radius: 50;
+    -o-border-radius: 50;
+}
+
+.navigation ul li:hover a::before{
+    top: -55px;    
+    box-shadow: 34px 34px 0 10px var(--white);
+}
+
+.navigation ul li:hover a::after{
+    bottom: -55px;    
+    box-shadow: 34px -34px 0 10px var(--white);
+}
+
+
+.navigation ul li a .icon{
+    width: 35px;
+    height: 35px;
+    position: relative;
+    text-align: center;
+}
+
+.navigation ul li a .title{
+    align-self: center;
+    font-size: 18px;
+    position: relative;
+    display: block;
+    margin-left: 10px;
+}
+/* //sidemenu CSS End */
