@@ -16,8 +16,8 @@
     <!-- Slick CSS -->
     <link rel="stylesheet" href="assets/css/slick.css">
 
-    <!-- Venobox CSS -->
-    <link rel="stylesheet" href="assets/css/venobox.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -121,13 +121,13 @@
                                 <div class="card-header h5">
                                     <span class="cardheader">Views</span>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body cardbody">
                                     <h5 class="card-title cardcount">1,500</h5>
                                     <p class="card-text cardtitle">Daily Views</p>
+                                    <div class="card_icon">
+                                        <img src="assets/images/views.png" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card_icon">
-                                <img src="assets/images/views.png" alt="">
                             </div>
                         </div>
                     </a>
@@ -142,10 +142,10 @@
                                 <div class="card-body">
                                     <h5 class="card-title cardcount">20k</h5>
                                     <p class="card-text cardtitle">Daily Subscribers</p>
+                                    <div class="card_icon">
+                                        <img src="assets/images/subscribers.png" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card_icon">
-                                <img src="assets/images/subscribers.png" alt="">
                             </div>
                         </div>
                     </a>
@@ -160,10 +160,10 @@
                                 <div class="card-body">
                                     <h5 class="card-title cardcount">300</h5>
                                     <p class="card-text cardtitle">Comments</p>
+                                    <div class="card_icon">
+                                        <img src="assets/images/comments.png" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card_icon">
-                                <img src="assets/images/comments.png" alt="">
                             </div>
                         </div>
                     </a>
@@ -177,11 +177,11 @@
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title cardcount">$200</h5>
-                                    <p class="card-text cardtitle">Daily Views</p>
+                                    <p class="card-text cardtitle">Total Earnings</p>
+                                    <div class="card_icon">
+                                        <img src="assets/images/earnings.png" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card_icon">
-                                <img src="assets/images/earnings.png" alt="">
                             </div>
                         </div>
                     </a>
@@ -190,429 +190,356 @@
         </div>
         <!-- //cards Part End -->
 
-        <!--  Part Start -->
+        <!-- Allitems Part Start -->
         <div class="allItems">
-            <div class="views">
-                <div class="row">
-                    <div class="col-md-3">
-                        <ul class="list-group">
-                            <li class="list-group-item bgblue textwhite text-center">Today's Viewers</li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa2</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa3</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa4</span>
-                            </li>
-                        </ul>
+            <!-- Details llist Part Start -->
+            <div class="details">
+                <div class="viewBox">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="vchart bg-light">
+                                <canvas id="viewChart"></canvas>
+                            </div>
+                            <!-- <div class="viewDetail">
+                                <div class="card text-dark bg-light mb-3" style="max-width: 100%;">
+                                    <div class="card-header rvtitle">
+                                        <h4 class="textgreen">Recent Viewers</h4>
+                                        <button class="btn btn-primary rvbtn" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseExample">
+                                            view all
+                                        </button>
+                                    </div>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card-body tablebody">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Image</th>
+                                                        <th scope="col">Name</th>
+                                                        <th scope="col">Email</th>
+                                                        <th scope="col">Message</th>
+                                                        <th scope="col">status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                        </th>
+                                                        <td>Mark</td>
+                                                        <td>xxxxxx@gmail.com</td>
+                                                        <td><a class="text-info" href="#">@thin</a></td>
+                                                        <td>
+                                                            <span class="badge bg-success">Active</span>
+                                                            <span class="badge bg-danger" type="button">Delete</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                        </th>
+                                                        <td>Jacob</td>
+                                                        <td>xxxxxx@gmail.com</td>
+                                                        <td><a class="text-info" href="#">@medium</a></td>
+                                                        <td>
+                                                            <span class="badge bg-warning text-dark">Deativated</span>
+                                                            <span class="badge bg-danger" type="button">Delete</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                        </th>
+                                                        <td>Stark</td>
+                                                        <td>xxxxxx@gmail.com</td>
+                                                        <td><a class="text-info" href="#">@fat</a></td>
+                                                        <td>
+                                                            <span class="badge bg-success">Active</span>
+                                                            <span class="badge bg-danger" type="button">Delete</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="col-md-6 ps-4 ms-auto">
+                            <div class="card text-dark bg-light mb-3" style="max-width: 100%;">
+                                <div class="card-header rvtitle">
+                                    <h4 class="textgreen">Recent Viewers</h4>
+                                </div>
+                                <div class="card-body tablebody">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Image</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Handle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                </th>
+                                                <td>Joe Biden</td>
+                                                <td><a class="text-info" href="#">@thin</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                </th>
+                                                <td>Donald Trump</td>
+                                                <td><a class="text-info" href="#">@medium</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                </th>
+                                                <td>Hillary Clinton</td>
+                                                <td><a class="text-info" href="#">@fat</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-3">
-                        <ul class="list-group">
-                            <li class="list-group-item bgblue textwhite text-center">Daily Veiwers</li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa2</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa3</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa4</span>
-                            </li>
-                        </ul>
+                </div>
+                <div class="subBox">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="vchart bg-light">
+                                <canvas id="subChart"></canvas>
+                            </div>
+                            <!-- <div class="viewDetail">
+                                <div class="card text-dark bg-light mb-3" style="max-width: 100%;">
+                                    <div class="card-header rvtitle">
+                                        <h4 class="textgreen">Recent Viewers</h4>
+                                        <button class="btn btn-primary rvbtn" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseExample">
+                                            view all
+                                        </button>
+                                    </div>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card-body tablebody">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Image</th>
+                                                        <th scope="col">Name</th>
+                                                        <th scope="col">Email</th>
+                                                        <th scope="col">Message</th>
+                                                        <th scope="col">status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                        </th>
+                                                        <td>Mark</td>
+                                                        <td>xxxxxx@gmail.com</td>
+                                                        <td><a class="text-info" href="#">@thin</a></td>
+                                                        <td>
+                                                            <span class="badge bg-success">Active</span>
+                                                            <span class="badge bg-danger" type="button">Delete</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                        </th>
+                                                        <td>Jacob</td>
+                                                        <td>xxxxxx@gmail.com</td>
+                                                        <td><a class="text-info" href="#">@medium</a></td>
+                                                        <td>
+                                                            <span class="badge bg-warning text-dark">Deativated</span>
+                                                            <span class="badge bg-danger" type="button">Delete</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                        </th>
+                                                        <td>Stark</td>
+                                                        <td>xxxxxx@gmail.com</td>
+                                                        <td><a class="text-info" href="#">@fat</a></td>
+                                                        <td>
+                                                            <span class="badge bg-success">Active</span>
+                                                            <span class="badge bg-danger" type="button">Delete</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="col-md-6 ps-4 ms-auto">
+                            <div class="card text-dark bg-light mb-3" style="max-width: 100%;">
+                                <div class="card-header rvtitle">
+                                    <h4 class="textgreen">Recent Subscribers</h4>
+                                </div>
+                                <div class="card-body tablebody">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Image</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Handle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                </th>
+                                                <td>Joe Biden</td>
+                                                <td><a class="text-info" href="#">@thin</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                </th>
+                                                <td>Donald Trump</td>
+                                                <td><a class="text-info" href="#">@medium</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                </th>
+                                                <td>Hillary Clinton</td>
+                                                <td><a class="text-info" href="#">@fat</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-3">
-                        <ul class="list-group">
-                            <li class="list-group-item bgblue textwhite text-center">Monthly Viewers</li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa2</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa3</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa4</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <ul class="list-group">
-                            <li class="list-group-item bgblue textwhite text-center">Yearly Viewers</li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa2</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa3</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa4</span>
-                            </li>
-                        </ul>
+                </div>
+                <div class="earnBox">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="echart bg-light">
+                                <canvas id="earnChart"></canvas>
+                            </div>
+                            <!-- <div class="viewDetail">
+                                <div class="card text-dark bg-light mb-3" style="max-width: 100%;">
+                                    <div class="card-header rvtitle">
+                                        <h4 class="textgreen">Recent Viewers</h4>
+                                        <button class="btn btn-primary rvbtn" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseExample">
+                                            view all
+                                        </button>
+                                    </div>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card-body tablebody">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Image</th>
+                                                        <th scope="col">Name</th>
+                                                        <th scope="col">Email</th>
+                                                        <th scope="col">Message</th>
+                                                        <th scope="col">status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                        </th>
+                                                        <td>Mark</td>
+                                                        <td>xxxxxx@gmail.com</td>
+                                                        <td><a class="text-info" href="#">@thin</a></td>
+                                                        <td>
+                                                            <span class="badge bg-success">Active</span>
+                                                            <span class="badge bg-danger" type="button">Delete</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                        </th>
+                                                        <td>Jacob</td>
+                                                        <td>xxxxxx@gmail.com</td>
+                                                        <td><a class="text-info" href="#">@medium</a></td>
+                                                        <td>
+                                                            <span class="badge bg-warning text-dark">Deativated</span>
+                                                            <span class="badge bg-danger" type="button">Delete</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                        </th>
+                                                        <td>Stark</td>
+                                                        <td>xxxxxx@gmail.com</td>
+                                                        <td><a class="text-info" href="#">@fat</a></td>
+                                                        <td>
+                                                            <span class="badge bg-success">Active</span>
+                                                            <span class="badge bg-danger" type="button">Delete</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <!-- <div class="col-md-4">
+                            <div class="card text-dark bg-light mb-3" style="max-width: 100%;">
+                                <div class="card-header rvtitle">
+                                    <h4 class="textgreen">Recent Viewers</h4>
+                                </div>
+                                <div class="card-body tablebody">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Image</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Handle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                </th>
+                                                <td>Joe Biden</td>
+                                                <td><a class="text-info" href="#">@thin</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                </th>
+                                                <td>Donald Trump</td>
+                                                <td><a class="text-info" href="#">@medium</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                </th>
+                                                <td>Hillary Clinton</td>
+                                                <td><a class="text-info" href="#">@fat</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
-            
-            <div class="subscribers">
-                <div class="row">
-                    <div class="col-md-3">
-                        <ul class="list-group">
-                            <li class="list-group-item bgred textwhite text-center">Today's Subscribers</li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa2</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa3</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa4</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <ul class="list-group">
-                            <li class="list-group-item bgred textwhite text-center">Daily Subscribers</li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa2</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa3</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa4</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <ul class="list-group">
-                            <li class="list-group-item bgred textwhite text-center">Monthly Subscribers</li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa2</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa3</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa4</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <ul class="list-group">
-                            <li class="list-group-item bgred textwhite text-center">Yearly Subscribers</li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa2</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa3</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa4</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comments">
-                <div class="row">
-                    <div class="col-md-3">
-                        <ul class="list-group">
-                            <li class="list-group-item bgorange textwhite text-center">Today's Comments</li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa2</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa3</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa4</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <ul class="list-group">
-                            <li class="list-group-item bgorange textwhite text-center">Daily Comments</li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa2</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa3</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa4</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <ul class="list-group">
-                            <li class="list-group-item bgorange textwhite text-center">Monthly Comments</li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa2</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa3</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa4</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <ul class="list-group">
-                            <li class="list-group-item bgorange textwhite text-center">Yearly Comments</li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa2</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa3</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa4</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="earnings">
-                <div class="row">
-                    <div class="col-md-3">
-                        <ul class="list-group">
-                            <li class="list-group-item bggreen textwhite text-center">Today's Earnings</li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa2</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa3</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa4</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <ul class="list-group">
-                            <li class="list-group-item bggreen textwhite text-center">Daily Earnings</li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa2</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa3</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa4</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <ul class="list-group">
-                            <li class="list-group-item bggreen textwhite text-center">Monthly Earnings</li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa2</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa3</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa4</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <ul class="list-group">
-                            <li class="list-group-item bggreen textwhite text-center">Yearly Earnings</li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa1</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa2</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa3</span>
-                            </li>
-                            <li class="list-group-item useractive list bggrey">
-                                <img class="" src="assets/images/user-2.jpg" alt="">
-                                <span>Mrs. Arpa4</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <!-- //Details llist Part End -->
         </div>
-        <!-- // Part End -->
+        <!-- //Allitems Part End -->
     </section>
     <!-- //main section Part End -->
 
@@ -626,10 +553,16 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- slick Js -->
     <script src="assets/js/slick.min.js"></script>
-    <!-- Venobox Js -->
-    <script src="assets/js/Venobox.min.js"></script>
     <!-- Wow Js -->
     <script src="assets/js/wow.min.js"></script>
+    <!-- Chart CDN Js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+    <!-- View Chart Js -->
+    <script src="assets/js/vchart.js"></script>
+    <!-- Subscriber Chart Js -->
+    <script src="assets/js/schart.js"></script>
+    <!-- Earning Chart Js -->
+    <script src="assets/js/echart.js"></script>
     <!-- Main Js -->
     <script src="assets/js/app.js"></script>
 
@@ -653,6 +586,8 @@
         }
         list.forEach((item) =>
             item.addEventListener('mouseover', activeLink));
+
+        new WOW().init();
     </script>
 </body>
 

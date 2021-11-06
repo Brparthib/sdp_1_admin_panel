@@ -181,8 +181,10 @@ a {
 }
 
 .navigation ul li:nth-child(1) {
-  margin-bottom: 70px;
+  margin-bottom: 60px;
   pointer-events: none;
+  overflow: hidden;
+  max-height: 85px;
 }
 
 .navigation ul li a {
@@ -379,7 +381,11 @@ a {
   padding: 20px 20px 10px;
 }
 
-.card_item {
+.card-header:first-child {
+  border-bottom: 1px solid var(--red);
+}
+
+.cardbody {
   position: relative;
 }
 
@@ -408,15 +414,87 @@ a {
 /* //Cards CSS End */
 
 /* allItems CSS Start */
-.allItems {
+.allItems{
   padding: 20px 20px 10px;
 }
 
-@keyframes goright {
-
+.details .accordion-button{
+  width: 100px !important;
+  height: 60px !important;
 }
 
-.list img {
+.viewBox,
+.subBox,
+.earnBox {
+  display: none;
+}
+
+.block{
+  display: block;
+}
+
+.vchart{
+  padding: 10px;
+  width: 550px;
+  height: 550px;
+  /* margin: 0 auto; */
+  margin-bottom: 50px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 10px;
+}
+
+.echart {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 10px;
+}
+
+.mychart{
+}
+
+.rvtitle {
+  position: relative;
+  height: 60px !important;
+  border: none !important;
+}
+
+.rvtitle h4{
+  padding-top: 8px;
+  align-self: center;
+}
+
+.rvbtn{
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  outline: none !important;
+  padding: 5px 15px !important;
+}
+
+.rvbtn:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.tablebody {
+  border-top: 1px solid var(--red);
+}
+
+.rvimg{
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -424,21 +502,8 @@ a {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  margin-right: 15px;
 }
 
-.views,
-.subscribers,
-.comments,
-.earnings{
-  display: none;
-  visibility: hidden;
-}
-
-.block{
-  display: block;
-  visibility: visible;
-}
 /* //allItems CSS End */
 
 /* //main CSS End */
