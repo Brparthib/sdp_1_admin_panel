@@ -18,4 +18,13 @@ $(function () {
         $('.viewBox').removeClass('block')
     });
     // //Cards Click JS End
+
+    // sidebar Click JS Start
+    $('.channel').on('click', function(){
+        $('.mychannel').removeClass('d-none'),
+        $('.cards').addClass('d-none'),
+        $('.messagebox').addClass('d-none'),
+        $('.settingsbox').addClass('d-none')
+    })
+    // //sidebar Click JS End
 });
