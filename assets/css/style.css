@@ -512,6 +512,7 @@ a {
 .channelbox{
   width: 100%;
   position: relative;
+  margin: 20px 0;
 }
 
 .channelbox h4{
@@ -553,7 +554,8 @@ a {
 }
 
 .cardbody ul{
-  text-align: center
+  text-align: left;
+  text-align: center;
 }
 
 .cardbody ul li{
@@ -570,6 +572,42 @@ a {
   background: #2b9537;
   cursor: pointer;
 }
+
+.homebox .upload{
+  margin-bottom: 60px;
+}
+
+.homebox .upload input[type="file"]{
+  display: none;
+}
+
+.videobox .vitem{
+  margin: 10px 0;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.videobox .vitem h4{
+  font-size: 20px;
+}
+
+.videobox .vitem p{
+  font-size: 15px;
+}
+
+.videobox .vitem .edit,
+.videobox .vitem .delete {
+  cursor: pointer;
+}
+
+.videobox .vitem select {
+  width: 122px;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+
 /* //mychannel CSS End */
 
 /* //main CSS End */

@@ -20,11 +20,34 @@ $(function () {
     // //Cards Click JS End
 
     // sidebar Click JS Start
-    $('.channel').on('click', function(){
-        $('.mychannel').removeClass('d-none'),
-        $('.cards').addClass('d-none'),
+    $('.dashboard').on('click', function(){
+        $('#dashboard').removeClass('d-none'),
+        $('.mychannel').addClass('d-none'),
         $('.messagebox').addClass('d-none'),
         $('.settingsbox').addClass('d-none')
-    })
+    });
+
+    $('.channel').on('click', function(){
+        $('.mychannel').removeClass('d-none'),
+        $('#dashboard').addClass('d-none'),
+        $('.messagebox').addClass('d-none'),
+        $('.settingsbox').addClass('d-none')
+    });
     // //sidebar Click JS End
+
+    // channel component click JS Start
+    $('.home').on('click', function(){
+        $('.homebox').removeClass('d-none'),
+        $('.videobox').addClass('d-none'),
+        $('.playlistbox').addClass('d-none'),
+        $('.studiobox').addClass('d-none')
+    });
+
+    $('.videos').on('click', function(){
+        $('.videobox').removeClass('d-none'),
+        $('.homebox').addClass('d-none'),
+        $('.playlistbox').addClass('d-none'),
+        $('.studiobox').addClass('d-none')
+    })
+    // //channel component click JS End
 });

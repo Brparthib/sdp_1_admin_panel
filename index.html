@@ -41,16 +41,16 @@
                             <span class="title name">Project Name</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="dashboard">
                         <a href="#">
                             <img class="icon" src="assets/images/iconpng/007-dashboard.png" alt="">
-                            <span class="title dashboard">Dashboard</span>
+                            <span class="title">Dashboard</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="channel">
                         <a href="#">
                             <img class="icon" src="assets/images/iconpng/004-channel.png" alt="">
-                            <span class="title channel">Channel</span>
+                            <span class="title">Channel</span>
                         </a>
                     </li>
                     <li>
@@ -111,233 +111,368 @@
         </div>
         <!-- //topbar Part End -->
 
-        <!-- cards Part Start -->
-        <div class="cards">
-            <div class="row">
-                <div class="col-md-3">
-                    <a class="viewcard" href="#">
-                        <div class="card_item">
-                            <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
-                                <div class="card-header h5">
-                                    <span class="cardheader">Views</span>
-                                </div>
-                                <div class="card-body cardbody">
-                                    <h5 class="card-title cardcount">1,500</h5>
-                                    <p class="card-text cardtitle">Daily Views</p>
-                                    <div class="card_icon">
-                                        <img src="assets/images/views.png" alt="">
+        <!-- Dashboard Part Start -->
+        <section id="dashboard">
+            <!-- cards Part Start -->
+            <div class="cards">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a class="viewcard" href="#">
+                            <div class="card_item">
+                                <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                                    <div class="card-header h5">
+                                        <span class="cardheader">Views</span>
+                                    </div>
+                                    <div class="card-body cardbody">
+                                        <h5 class="card-title cardcount">1,500</h5>
+                                        <p class="card-text cardtitle">Daily Views</p>
+                                        <div class="card_icon">
+                                            <img src="assets/images/views.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a class="subscribercard" href="#">
-                        <div class="card_item">
-                            <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
-                                <div class="card-header h5">
-                                    <span class="cardheader">Subscribers</span>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title cardcount">20k</h5>
-                                    <p class="card-text cardtitle">Daily Subscribers</p>
-                                    <div class="card_icon">
-                                        <img src="assets/images/subscribers.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a class="subscribercard" href="#">
+                            <div class="card_item">
+                                <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                                    <div class="card-header h5">
+                                        <span class="cardheader">Subscribers</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title cardcount">20k</h5>
+                                        <p class="card-text cardtitle">Daily Subscribers</p>
+                                        <div class="card_icon">
+                                            <img src="assets/images/subscribers.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a class="commentcard" href="#">
-                        <div class="card_item">
-                            <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
-                                <div class="card-header h5">
-                                    <span class="cardheader">Comments</span>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title cardcount">300</h5>
-                                    <p class="card-text cardtitle">Comments</p>
-                                    <div class="card_icon">
-                                        <img src="assets/images/comments.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a class="commentcard" href="#">
+                            <div class="card_item">
+                                <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                                    <div class="card-header h5">
+                                        <span class="cardheader">Comments</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title cardcount">300</h5>
+                                        <p class="card-text cardtitle">Comments</p>
+                                        <div class="card_icon">
+                                            <img src="assets/images/comments.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a class="earningcard" href="#">
-                        <div class="card_item">
-                            <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
-                                <div class="card-header h5">
-                                    <span class="cardheader">Earnings</span>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title cardcount">$200</h5>
-                                    <p class="card-text cardtitle">Total Earnings</p>
-                                    <div class="card_icon">
-                                        <img src="assets/images/earnings.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a class="earningcard" href="#">
+                            <div class="card_item">
+                                <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                                    <div class="card-header h5">
+                                        <span class="cardheader">Earnings</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title cardcount">$200</h5>
+                                        <p class="card-text cardtitle">Total Earnings</p>
+                                        <div class="card_icon">
+                                            <img src="assets/images/earnings.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- //cards Part End -->
+            <!-- //cards Part End -->
 
-        <!-- Allitems Part Start -->
-        <div class="allItems">
-            <!-- Details llist Part Start -->
-            <div class="details">
-                <div class="viewBox">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="vchart bg-light">
-                                <canvas id="viewChart"></canvas>
+            <!-- Allitems Part Start -->
+            <div class="allItems">
+                <!-- Details llist Part Start -->
+                <div class="details">
+                    <div class="viewBox">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="vchart bg-light">
+                                    <canvas id="viewChart"></canvas>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ps-4 ms-auto">
+                                <div class="card text-dark bg-light mb-3" style="max-width: 100%;">
+                                    <div class="card-header rvtitle">
+                                        <h4 class="textgreen">Recent Viewers</h4>
+                                    </div>
+                                    <div class="card-body tablebody">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Image</th>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Handle</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                    </th>
+                                                    <td>Joe Biden</td>
+                                                    <td><a class="text-info" href="#">@thin</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                    </th>
+                                                    <td>Donald Trump</td>
+                                                    <td><a class="text-info" href="#">@medium</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                    </th>
+                                                    <td>Hillary Clinton</td>
+                                                    <td><a class="text-info" href="#">@fat</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6 ps-4 ms-auto">
-                            <div class="card text-dark bg-light mb-3" style="max-width: 100%;">
-                                <div class="card-header rvtitle">
-                                    <h4 class="textgreen">Recent Viewers</h4>
+                    </div>
+                    <div class="subBox">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="vchart bg-light">
+                                    <canvas id="subChart"></canvas>
                                 </div>
-                                <div class="card-body tablebody">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">Image</th>
-                                                <th scope="col">Name</th>
-                                                <th scope="col">Handle</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">
-                                                    <img class="rvimg" src="assets/images/user-1.jpg" alt="">
-                                                </th>
-                                                <td>Joe Biden</td>
-                                                <td><a class="text-info" href="#">@thin</a></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">
-                                                    <img class="rvimg" src="assets/images/user-1.jpg" alt="">
-                                                </th>
-                                                <td>Donald Trump</td>
-                                                <td><a class="text-info" href="#">@medium</a></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">
-                                                    <img class="rvimg" src="assets/images/user-1.jpg" alt="">
-                                                </th>
-                                                <td>Hillary Clinton</td>
-                                                <td><a class="text-info" href="#">@fat</a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                            </div>
+                            <div class="col-md-6 ps-4 ms-auto">
+                                <div class="card text-dark bg-light mb-3" style="max-width: 100%;">
+                                    <div class="card-header rvtitle">
+                                        <h4 class="textgreen">Recent Subscribers</h4>
+                                    </div>
+                                    <div class="card-body tablebody">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Image</th>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Handle</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                    </th>
+                                                    <td>Joe Biden</td>
+                                                    <td><a class="text-info" href="#">@thin</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                    </th>
+                                                    <td>Donald Trump</td>
+                                                    <td><a class="text-info" href="#">@medium</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <img class="rvimg" src="assets/images/user-1.jpg" alt="">
+                                                    </th>
+                                                    <td>Hillary Clinton</td>
+                                                    <td><a class="text-info" href="#">@fat</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="earnBox">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="echart bg-light">
+                                    <canvas id="earnChart"></canvas>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="subBox">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="vchart bg-light">
-                                <canvas id="subChart"></canvas>
-                            </div>
-                        </div>
-                        <div class="col-md-6 ps-4 ms-auto">
-                            <div class="card text-dark bg-light mb-3" style="max-width: 100%;">
-                                <div class="card-header rvtitle">
-                                    <h4 class="textgreen">Recent Subscribers</h4>
-                                </div>
-                                <div class="card-body tablebody">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">Image</th>
-                                                <th scope="col">Name</th>
-                                                <th scope="col">Handle</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">
-                                                    <img class="rvimg" src="assets/images/user-1.jpg" alt="">
-                                                </th>
-                                                <td>Joe Biden</td>
-                                                <td><a class="text-info" href="#">@thin</a></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">
-                                                    <img class="rvimg" src="assets/images/user-1.jpg" alt="">
-                                                </th>
-                                                <td>Donald Trump</td>
-                                                <td><a class="text-info" href="#">@medium</a></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">
-                                                    <img class="rvimg" src="assets/images/user-1.jpg" alt="">
-                                                </th>
-                                                <td>Hillary Clinton</td>
-                                                <td><a class="text-info" href="#">@fat</a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="earnBox">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="echart bg-light">
-                                <canvas id="earnChart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- //Details llist Part End -->
             </div>
-            <!-- //Details llist Part End -->
-        </div>
-        <!-- //Allitems Part End -->
+            <!-- //Allitems Part End -->
+        </section>
+        <!-- //Dashboard Part End -->
 
         <!-- channel Part Start -->
         <div class="mychannel d-none">
             <div class="channelbox">
                 <div class="card" style="width: 100%;">
                     <div class="card-header cardheader">
-                        <span >
+                        <span>
                             <img src="assets/images/iconpng/004-channel.png" alt="">
                             <h4>Your Channel</h4>
                         </span>
-                        <button class="btn bgorange text-light componentbtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample">
+                        <button class="btn bgorange text-light componentbtn" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample">
                             Components
-                          </button>
+                        </button>
                     </div>
                     <div class="collapse" id="collapseExample">
                         <div class="card-body cardbody">
-                          <ul>
-                              <li><a href="index.html"><span class="badge bgblue">Home</span></a></li>
-                              <li><span class="badge bgblue">Videos</span></li>
-                              <li><span class="badge bgblue">Playlist</span></li>
-                              <li><span class="badge bgblue">Channels</span></li>
-                              <li><span class="badge bgblue">Studio</span></li>
-                              <li>
-                                  
-                              </li>
-                          </ul>
+                            <ul>
+                                <li><span class="badge bgblue home">Home</span></li>
+                                <li><span class="badge bgblue videos">Videos</span></li>
+                                <li><span class="badge bgblue playlists">Playlist</span></li>
+                                <li><span class="badge bgblue channels">Channels</span></li>
+                                <li><span class="badge bgblue studio">Studio</span></li>
+                                <li><span class="badge bgblue customize">Customize</span></li>
+                                <li>
+                                    <div class="input-group mb-3 vsearch">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                        <span class="input-group-text" id="basic-addon2">
+                                            <i class="fas fa-search"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
-            <!-- //channel Part End -->
+            <div class="homebox d-none">
+                <div class="upload">
+                    <div class="card mx-auto" style="width: 500px">
+                        <img src="assets/images/gif/upload.gif" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h4>Upload your video and Show your skills</h4>
+                            <p class="card-text">You can upload you videos from here</p>
+                            <input type="file" id="uploadfile" accept="assets/videos/*">
+                            <label for="uploadfile" class="btn bggreen text-light mt-3">Upload</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="videobox d-none">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="vitem">
+                            <div class="card" style="width: 100%;">
+                                <video src="assets/videos/v1.mp4" class="card-img-top" autoplay muted loop></video>
+                                <div class="card-body">
+                                    <h4>A funny story for kids</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <span class="badge bgblue edit">Edit</span>
+                                    <span class="badge bgred delete">Delete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="vitem">
+                            <div class="card" style="width: 100%;">
+                                <video src="assets/videos/v1.mp4" class="card-img-top" autoplay muted loop></video>
+                                <div class="card-body">
+                                    <h4>A funny story for kids</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <span class="badge bgblue edit">Edit</span>
+                                    <span class="badge bgred delete">Delete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="vitem">
+                            <div class="card" style="width: 100%;">
+                                <video src="assets/videos/v1.mp4" class="card-img-top" autoplay muted loop></video>
+                                <div class="card-body">
+                                    <h4>A funny story for kids</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <span class="badge bgblue edit">Edit</span>
+                                    <span class="badge bgred delete">Delete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="vitem">
+                            <div class="card" style="width: 100%;">
+                                <video src="assets/videos/v1.mp4" class="card-img-top" autoplay muted loop></video>
+                                <div class="card-body">
+                                    <h4>A funny story for kids</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <span class="badge bgblue edit">Edit</span>
+                                    <span class="badge bgred delete">Delete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="vitem">
+                            <div class="card" style="width: 100%;">
+                                <video src="assets/videos/v1.mp4" class="card-img-top" autoplay muted loop></video>
+                                <div class="card-body">
+                                    <h4>A funny story for kids</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <span class="badge bgblue edit">Edit</span>
+                                    <span class="badge bgred delete">Delete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="vitem">
+                            <div class="card" style="width: 100%;">
+                                <video src="assets/videos/v1.mp4" class="card-img-top" autoplay muted loop></video>
+                                <div class="card-body">
+                                    <h4>A funny story for kids</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <span class="badge bgblue edit">Edit</span>
+                                    <span class="badge bgred delete">Delete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="vitem">
+                            <div class="card" style="width: 100%;">
+                                <video src="assets/videos/v1.mp4" class="card-img-top" autoplay muted loop></video>
+                                <div class="card-body">
+                                    <h4>A funny story for kids</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <span class="badge bgblue edit">Edit</span>
+                                    <span class="badge bgred delete">Delete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="vitem">
+                            <div class="card" style="width: 100%;">
+                                <video src="assets/videos/v1.mp4" class="card-img-top" autoplay muted loop></video>
+                                <div class="card-body">
+                                    <h4>A funny story for kids</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <span class="badge bgblue edit">Edit</span>
+                                    <span class="badge bgred delete">Delete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //channel Part End -->
 
     </section>
     <!-- //main section Part End -->
