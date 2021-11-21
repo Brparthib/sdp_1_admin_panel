@@ -504,23 +504,23 @@ a {
 /* //allItems CSS End */
 
 /* mychannel CSS Start */
-.mychannel{
+.mychannel {
   width: 100%;
   padding: 0 20px;
 }
 
-.channelbox{
+.channelbox {
   width: 100%;
   position: relative;
   margin: 20px 0;
 }
 
-.channelbox h4{
+.channelbox h4 {
   display: inline-block;
   align-self: center;
 }
 
-.channelbox img{
+.channelbox img {
   width: 50px;
   height: 50px;
   margin: 0 10px;
@@ -530,11 +530,11 @@ a {
   border-bottom: none;
 }
 
-.cardheader{
+.cardheader {
   position: relative;
 }
 
-.componentbtn{
+.componentbtn {
   position: absolute;
   top: 50%;
   right: 10px;
@@ -545,7 +545,7 @@ a {
   -o-transform: translateY(-50%);
 }
 
-.cardbody{
+.cardbody {
   border-radius: none !important;
   -webkit-border-radius: none !important;
   -moz-border-radius: none !important;
@@ -553,45 +553,45 @@ a {
   -o-border-radius: none !important;
 }
 
-.cardbody ul{
+.cardbody ul {
   text-align: left;
   text-align: center;
 }
 
-.cardbody ul li{
+.cardbody ul li {
   display: inline-block;
   margin: 0 20px;
 }
 
-.cardbody ul li span{
+.cardbody ul li span {
   font-size: 15px;
   transition: all 0.5s;
 }
 
-.cardbody ul li span:hover{
+.cardbody ul li span:hover {
   background: #2b9537;
   cursor: pointer;
 }
 
-.homebox .upload{
+.homebox .upload {
   margin-bottom: 60px;
 }
 
-.homebox .upload input[type="file"]{
+.homebox .upload input[type="file"] {
   display: none;
 }
 
-.videobox .vitem{
+.videobox .vitem {
   margin: 10px 0;
   position: relative;
   padding-bottom: 5px;
 }
 
-.videobox .vitem h4{
+.videobox .vitem h4 {
   font-size: 20px;
 }
 
-.videobox .vitem p{
+.videobox .vitem p {
   font-size: 15px;
 }
 
@@ -613,35 +613,36 @@ a {
 /* //main CSS End */
 
 /* login CSS Start */
-#login {
+#enteringpage {
   position: relative;
   width: 100%;
   height: 100vh;
 }
 
-#login::before,
-#login::after {
+#enteringpage::before,
+#enteringpage::after {
   position: absolute;
   content: "";
   top: 0;
   z-index: -1;
 }
 
-#login::before {
+#enteringpage::before {
   width: 50%;
   left: 0;
   height: 100%;
   background: #287bff;
 }
 
-#login::after {
+#enteringpage::after {
   width: 50%;
   right: 0;
   height: 100%;
   background: #ff9946;
 }
 
-#login .logincard {
+#enteringpage .logincard,
+#enteringpage .signupcard {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -656,9 +657,11 @@ a {
 }
 
 .logincard::before,
-.logincard::after{
+.logincard::after,
+.signupcard::before,
+.signupcard::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 80px;
   height: 80px;
   background: #fff;
@@ -676,19 +679,20 @@ a {
   z-index: -1;
 }
 
-
-.logincard::before{
+.logincard::before,
+.signupcard::before {
   top: -35px;
 }
 
-.logincard::after{
+.logincard::after,
+.signupcard::after {
   bottom: -35px;
 }
 
-.logincard h5{
+.logincard h5,
+.signupcard h5 {
   font-size: 25px;
   margin: 15px 0 30px;
 }
-
 
 /* //login CSS End */

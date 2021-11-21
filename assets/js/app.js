@@ -50,4 +50,17 @@ $(function () {
         $('.studiobox').addClass('d-none')
     })
     // //channel component click JS End
+
+    // login Signup switching JS Start
+    $('.switchsignup').on('click', function(){
+        $('.logincard').addClass('d-none'),
+        $('.signupcard').removeClass('d-none')
+    });
+
+    $('.switchlogin').on('click', function(){
+        $('.signupcard').addClass('d-none'),
+        $('.logincard').removeClass('d-none')
+    });
+
+    // //login Signup switching JS End
 });
